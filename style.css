@@ -67,11 +67,11 @@
      width: 100%;
      position: fixed;
      z-index: 1000;
-     background: linear-gradient(166deg, #246655, #1d201f, #d95625);
+     background: linear-gradient(166deg, #22477e, #1d201f, #f05b6e);
      background-size: 600% 600%;
-     -webkit-animation: AnimationName 30s ease infinite;
-     -moz-animation: AnimationName 30s ease infinite;
-     animation: AnimationName 30s ease infinite;
+     -webkit-animation: AnimationName 5s ease infinite;
+     -moz-animation: AnimationName 5s ease infinite;
+     animation: AnimationName 5s ease infinite;
      overflow: hidden;
      transition: all 1s;
  }
