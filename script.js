@@ -20,7 +20,7 @@ function big()
    document.getElementById("big").style.transition = "all 1s";
    document.getElementById("big2").style.display = "";
    document.getElementById("big2").style.transition = "all 1s";
-   document.getElementById("navi").style.height = "250px";
+   document.getElementById("navi").style.height = "100%";
    document.getElementById("navi").style.transition = "all 1s";
    document.getElementById("rot").style.transform='rotate('+270+'deg)';
    document.getElementById("rot").style.transition = "all 1s";
