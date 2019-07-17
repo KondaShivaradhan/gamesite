@@ -70,7 +70,7 @@
      width: 100%;
      position: fixed;
      z-index: 1000;
-     background: linear-gradient(45deg,white,black,white);
+     background:rgb(63, 63, 62);
      overflow: hidden;
      transition: all 1s;
  }
