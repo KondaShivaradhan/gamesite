@@ -1,8 +1,6 @@
 function myFunction() {
   if (window.pageYOffset > 20) {
     small();
-  } else {
-  big();
   }
 }
 function small()
