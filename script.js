@@ -3,35 +3,30 @@ function myFunction() {
     small();
   }
 }
-function small()
-{
-  document.getElementById("big2").style.display = "none";
-  document.getElementById("big2").style.transition = "all 1s";
-  document.getElementById("big").style.display = "none";
-  document.getElementById("big").style.transition = "all 1s";
-  document.getElementById("navi").style.height = "70px";
-  document.getElementById("navi").style.transition = "all 1s";
+function small() {
   
-   document.getElementById("rot").style.transform = "rotate(" +   90 + "deg)";
+  $("#big2").hide(1000);
+  $("#big1").hide(1000);
+  document.getElementById("rot").style.transition = "all 1s";
+  document.getElementById("navi").style.height = "70px";
+  document.getElementById("navi").style.background =
+    "linear-gradient(90deg,white,black,white)";
+  document.getElementById("rot").style.transform = "rotate(" + 90 + "deg)";
 }
-function big()
-{
-   document.getElementById("big").style.display = "";
-   document.getElementById("big").style.transition = "all 1s";
-   document.getElementById("big2").style.display = "";
-   document.getElementById("big2").style.transition = "all 1s";
-   document.getElementById("navi").style.height = "100%";
-   document.getElementById("navi").style.transition = "all 1s";
-   document.getElementById("rot").style.transform='rotate('+270+'deg)';
-   document.getElementById("rot").style.transition = "all 1s";
+function big() {
+
+  $("#big2").show(1000);
+    $("#big1").show(1000);
+  document.getElementById("rot").style.transition = "all 1s";
+  document.getElementById("navi").style.height = "100%";
+  document.getElementById("navi").style.background =
+    "linear-gradient(45deg,white,black,white)";
+  document.getElementById("rot").style.transform = "rotate(" + 270 + "deg)";
 }
-function navi()
-{
-  if(document.getElementById("navi").offsetHeight=="70")
-  {
+function navi() {
+  if (document.getElementById("navi").offsetHeight == "70") {
     big();
-  }
-  else{
+  } else {
     small();
   }
 }
