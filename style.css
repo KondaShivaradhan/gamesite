@@ -10,9 +10,11 @@
      transform-origin: top right;
      transform: skewY(4deg);
  }
-.row div{
-    padding-top: 30px;
-}
+
+ .row div {
+     padding-top: 30px;
+ }
+
  #game {
      width: 100vw;
      height: calc(100vw/1.77);
@@ -34,7 +36,6 @@
      top: 0px;
      z-index: -900;
  }
-
 
  #banner2 {
      width: 100%;
@@ -60,35 +61,77 @@
      top: 0;
  }
 
- #svg {
-     fill: yellow;
- }
-
  #navi {
      text-align: center;
      height: 100%;
      width: 100%;
      position: fixed;
      z-index: 1000;
-     background:rgb(63, 63, 62);
+     background: linear-gradient(166deg, #246655, #1d201f, #d95625);
+     background-size: 600% 600%;
+     -webkit-animation: AnimationName 30s ease infinite;
+     -moz-animation: AnimationName 30s ease infinite;
+     animation: AnimationName 30s ease infinite;
      overflow: hidden;
      transition: all 1s;
  }
-#small
+#edoti
 {
-    display: flex;
-    justify-content: space-between;
-    transition: all 1s;
+    background: transparent;    
+    border:transparent 0px;
+    font-size: 20px;
 }
-#big
-{
-    transition: all 1s;
-}
-#rot
-{
-    
-    transform: rotate(270deg);
-}
+
+ @-webkit-keyframes AnimationName {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }
+
+ @-moz-keyframes AnimationName {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }
+
+ @keyframes AnimationName {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }
+
+ #small {
+     display: flex;
+     justify-content: space-between;
+     transition: all 1s;
+ }
+
+ #big {
+     transition: all 1s;
+ }
+
+ #rot {
+     transform: rotate(270deg);
+ }
+
  @keyframes scroll {
      0% {
          bottom: 50px;
