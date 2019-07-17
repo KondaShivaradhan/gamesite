@@ -72,7 +72,17 @@
      background: rgb(177, 176, 176);
      overflow: hidden;
  }
-
+#small
+{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+#rot
+{
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
  @keyframes scroll {
      0% {
          bottom: 50px;
