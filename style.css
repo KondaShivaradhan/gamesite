@@ -80,8 +80,8 @@
 }
 #rot
 {
-    border-radius: 50%;
-    transform: rotate(90deg);
+    
+    transform: rotate(270deg);
 }
  @keyframes scroll {
      0% {
