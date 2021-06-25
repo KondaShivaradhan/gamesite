@@ -5,92 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- Latest compiled JavaScript -->
     <style>
         html {
             margin: 0;
             height: 100%;
             padding: 0;
+            overflow-x: hidden;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     </style>
     <script>
-        window.onscroll = function () {
-            myFunction();
+        window.onload = function() {
+            document.getElementById("click").innerHTML = 'Play'
         };
     </script>
 </head>
 
 <body>
+
     <div id="navi">
-        <!-- <div class="row">
-                <img id="img" height="200px" width="300px"
-                    src="https://igcportal.igcltd.com.au/App_Themes/MRT/Images/IGClogo.gif" alt="">
-            </div> -->
         <div id="ncon">
-            <div id="image">
-                <img src="gamepad.svg" id="svg" alt="">
+            <div>
+                <!-- <img src="gamepad.svg" id="svg" alt=""> -->
+                <svg id="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gamepad" class="svg-inline--fa fa-gamepad fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path fill="currentColor"
+                        d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z">
+                    </path>
+                </svg>
             </div>
             <div class="container" id="ntext">
-                <article>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam maxime alias dignissimos unde
-                    autem consequatur, aperiam pariatur ex. Magnam culpa sed commodi veniam soluta blanditiis eius magni
-                    necessitatibus accusantium!
-
-                </article>
+                <div class="wrap">
+                    <button id="click" class="button" onclick="myFunction()"> <i class="fas fa-spinner"></i> </button>
+                </div>
             </div>
             <div id="small">
-                <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i
-                        class="fa fa-chart-line"></i></a>
+                <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-chart-line"></i></a>
 
-                <a name="" id="edoti" class="btn btn-primary" href="#" role="button" title="Discord"> <i
-                        class="fab fa-discord">
+                <a name="" id="edoti" class="btn btn-primary" href="#" role="button" title="Discord"> <i class="fab fa-discord">
                     </i></a>
                 <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-gamepad">
                     </i></a>
-                <button onclick="navi()"
-                    style="height: 30px;background: transparent;border:white solid 3px;color:white;"
-                    class="btn btn-secondary" title=""><i id="rot" class="fas fa-greater-than"></i></button>
+                <button onclick="navi()" style="height: 30px;background: transparent;border:white solid 3px;color:white;" class="btn btn-secondary" title=""><i id="rot" class="fas fa-greater-than"></i></button>
             </div>
-            <div id="scrolldiv" style="font-size: x-large;">
-                <center>
-                    scroll down to begin the fun
-                </center>
-                <i id="scrolld" class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
+
         </div>
     </div>
+    <section style="background-color: rgb(0, 0, 0);">
+        <div style="background-color: beige;">
+            <h3>About BB</h3>
+        </div>
+    </section>
+    <section>
+        <h3>Youtube</h3>
+        <div>
 
-    <!-- <iframe width='100' id="game" height='100'
-        src="https://www.youtube.com/embed/a6s8Kek6eNI?&theme=dark&autoplay=1&loop=1&keyboard=1&autohide=1&modestbranding=1&fs=0&rel=0&start=8&end=120&iv_load_policy=3&mute=1&playlist=a6s8Kek6eNI"
-        frameborder="0"></iframe> -->
-    <div style="background: transparent" id="banner2">
-
-    </div>
-    <div style="background:rgb(34, 34, 34)" id="banner3">
-        <iframe src="https://discordapp.com/widget?id=515165357812613140&theme=dark" width="350" height="500"
-            allowtransparency="true" frameborder="0"></iframe>
-    </div>
-    <!-- <iframe width="100" id="game2" height="100"
-        src="https://www.youtube.com/embed/2ZfzbnueaPI?start=4&mute=1&autoplay=1&end=26&playlist=2ZfzbnueaPI"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe> -->
-
-    <!--  <div class="svg">
-        <svg id="svg" fill="" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-            <path d="M0 30 L50 90 L100 30 V100 H0"></path>
-        </svg>
-    </div>-->
+        </div>
+    </section>
+    <section>
+        <h3>
+            Discord
+        </h3>
+        <div>
+            <iframe src="https://discordapp.com/widget?id=515165357812613140&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+    </section>
+    <section></section>
 
 </body>
 
