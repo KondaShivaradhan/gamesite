@@ -136,16 +136,21 @@ body {
 #youtube {}
 
 #flex>div {
+    box-sizing: content-box;
     box-shadow: #5e5f5f 0px 0px 20px;
     width: 30%;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: nowrap;
     border-radius: 30px;
     overflow: hidden;
     padding: 15px;
+}
+
+p {
+    padding: 5px;
 }
 
 #svg {
