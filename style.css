@@ -118,6 +118,36 @@ body {
     margin-bottom: 50px;
 }
 
+#flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#bblogo {
+    height: 50px;
+    width: 50px;
+}
+
+#youtube {}
+
+#flex>div {
+    box-shadow: #5e5f5f 0px 0px 20px;
+    width: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 15px;
+}
+
 #svg {
     position: relative;
     display: flex;
