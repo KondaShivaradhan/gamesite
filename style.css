@@ -154,18 +154,25 @@ a:hover {
     animation: updown 0.5s alternate infinite ease-in-out;
 }
 
+#bb {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    height: 80vh;
+}
+
 section {
     text-align: center;
     width: 100%;
-    height: 80vh;
     padding: 30px;
+    overflow: hidden;
 }
 
-section>div {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#left {}
+
+#right {
+    padding: 20px;
 }
 
 .button {
@@ -196,6 +203,10 @@ button:focus {
     outline: 0;
 }
 
+#click {
+    display: none;
+}
+
 @media only screen and (max-device-width: 768px) {
     #svg {
         transform: scale(2);
@@ -206,4 +217,25 @@ button:focus {
         transform: translateY(-60%);
         height: auto;
     }
+    #bb {
+        height: 60vh;
+    }
+    #spin {
+        font-size: 30px;
+    }
+}
+
+@keyframes spining {
+    from {
+        transform: rotate((0deg));
+    }
+    to {
+        transform: rotate(180deg)
+    }
+    ;
+}
+
+#spin {
+    font-size: 40px;
+    animation: spining 1s ease infinite alternate-reverse;
 }

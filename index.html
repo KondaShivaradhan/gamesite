@@ -1,6 +1,10 @@
 <html>
 
 <head>
+    <title>Blazing Bane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,7 +27,8 @@
     </style>
     <script>
         window.onload = function() {
-            document.getElementById("click").innerHTML = 'Play'
+            document.getElementById('spin').style.display = "none"
+            document.getElementById('click').style.display = "inline"
         };
     </script>
 </head>
@@ -42,26 +47,85 @@
             </div>
             <div class="container" id="ntext">
                 <div class="wrap">
-                    <button id="click" class="button" onclick="myFunction()"> <i class="fas fa-spinner"></i> </button>
+                    <i id="spin" class="fas fa-spinner"></i>
+                    <button id="click" class="button" onclick="myFunction()"> Play </button>
                 </div>
             </div>
-            <div id="small">
+            <div id="small" class="container">
                 <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-chart-line"></i></a>
-
                 <a name="" id="edoti" class="btn btn-primary" href="#" role="button" title="Discord"> <i class="fab fa-discord">
                     </i></a>
                 <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-gamepad">
                     </i></a>
                 <button onclick="navi()" style="height: 30px;background: transparent;border:white solid 3px;color:white;" class="btn btn-secondary" title=""><i id="rot" class="fas fa-greater-than"></i></button>
             </div>
-
         </div>
     </div>
-    <section style="background-color: rgb(0, 0, 0);">
-        <div style="background-color: beige;">
-            <h3>About BB</h3>
+    <style>
+        #notfound {
+            position: relative;
+            height: 80%;
+        }
+        
+        #notfound .notfound {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+        
+        .notfound {
+            max-width: 410px;
+            width: 100%;
+            text-align: center
+        }
+        
+        .notfound .notfound-404 {
+            height: 280px;
+            position: relative;
+            z-index: -1
+        }
+        
+        .notfound .notfound-404 h1 {
+            font-family: montserrat, sans-serif;
+            font-size: 430px;
+            margin: 0;
+            font-weight: 900;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            /* background: url(https://cdn.statically.io/img/i.pinimg.com/originals/87/f6/c8/87f6c8d66da7bce402f08502086aa8c6.gif) no-repeat; */
+            /* background: url(https://i.pinimg.com/originals/ce/2b/78/ce2b78a05838ef311c0868bb2fca0494.gif) no-repeat; */
+            background: url(https://cdn.statically.io/img/i.pinimg.com/originals/87/f6/c8/87f6c8d66da7bce402f08502086aa8c6.gif) no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+            background-position: center
+        }
+        
+        @media only screen and (max-width:767px) {
+            .notfound .notfound-404 {
+                height: 142px
+            }
+            .notfound .notfound-404 h1 {
+                font-size: 250px
+            }
+        }
+    </style>
+    <section id="bb" style="background-color: black;">
+        <div id="notfound">
+            <div class="notfound">
+                <div class="notfound-404">
+                    <h1>BB</h1>
+                </div>
+            </div>
         </div>
     </section>
+
     <section>
         <h3>Socia Media</h3>
         <div id="flex">
