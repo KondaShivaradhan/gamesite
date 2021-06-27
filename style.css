@@ -121,12 +121,9 @@ body {
 
 #flex {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     border-radius: 30px;
     overflow: hidden;
-    padding: 20px;
-    justify-content: space-between;
 }
 
 #bblogo {
@@ -136,17 +133,20 @@ body {
 
 #youtube {}
 
+#discord {
+    box-shadow: #5e5f5f 0px 0px 20px;
+}
+
 #flex>div {
+    margin: 10px auto;
     color: black;
     box-sizing: content-box;
     box-shadow: #5e5f5f 10px 10px 20px;
-    width: 30%;
-    align-items: center;
+    width: 400px;
     background: white;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border-radius: 30px;
     overflow: hidden;
     padding: 15px;
@@ -197,7 +197,7 @@ a:hover {
     width: 100%;
     padding: 30px;
     overflow: hidden;
-    height: 80vh;
+    height: 60vh;
 }
 
 section {
@@ -209,11 +209,7 @@ section {
     overflow: hidden;
 }
 
-#left {}
-
-#right {
-    padding: 20px;
-}
+#about {}
 
 .button {
     position: relative;
