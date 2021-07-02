@@ -1,3 +1,12 @@
+$(document).on("click", 'a[href^="#"]', function(event) {
+    event.preventDefault();
+    $("html, body").animate({
+            scrollTop: ($($.attr(this, "href")).offset().top + 400)
+        },
+        1000
+    );
+});
+
 function myFunction() {
     // if (window.pageYOffset > 20) {
     //     small();

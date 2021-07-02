@@ -3,7 +3,7 @@
 <head>
     <title>Blazing Bane</title>
     <script src="https://apis.google.com/js/platform.js"></script>
-
+    <link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -12,17 +12,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60d5bd3f71e162001342c7b7&product=inline-follow-buttons" async="async"></script>
-
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.js" integrity="sha256-lZnJXv4iTfqLpnfAHnr1A6+LUpc8wHU33pwJYJhjQ6A=" crossorigin="anonymous"></script>
     <style>
         html {
             margin: 0;
+            scroll-behavior: smooth;
             height: 100%;
             padding: 0;
             overflow-x: hidden;
@@ -37,7 +38,7 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: black;">
 
     <div id="navi">
         <div id="ncon">
@@ -56,10 +57,10 @@
                 </div>
             </div>
             <div id="small" class="container">
-                <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-chart-line"></i></a>
-                <a name="" id="edoti" class="btn btn-primary" href="#" role="button" title="Discord"> <i class="fab fa-discord">
+                <a name="" id="edoti" class="btn btn-primary" href="#about" role="button"> <img src="logo.svg" style="height: 25px;width: 25px;" alt="Kiwi standing on oval"></a>
+                <a name="" id="edoti" class="btn btn-primary" href="#disc" role="button" title="Discord"> <i class="fab fa-discord">
                     </i></a>
-                <a name="" id="edoti" class="btn btn-primary" href="#" role="button"> <i class="fa fa-gamepad">
+                <a name="" id="edoti" class="btn btn-primary" href="#play" role="button"> <i class="fa fa-gamepad">
                     </i></a>
                 <button onclick="navi()" style="height: 30px;background: transparent;border:white solid 3px;color:white;" class="btn btn-secondary" title=""><i id="rot" class="fas fa-greater-than"></i></button>
             </div>
@@ -144,7 +145,7 @@
             <div id="insta">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" height="50px" width="50px" alt="">
                 <p>
-                    On Insta I post reels which are about funny movement and short cinematic edits. Main goal is to grow and connect with other gamers as well. <br> Hoping for more Followers!
+                    On Instagram I post reels which are about funny movement and short cinematic edits. Main goal is to grow and connect with other gamers as well. <br> Hoping for more Followers!
                 </p>
                 <a href="https://www.instagram.com/blazing_bane/reels/">
                     <div class="btn btn-primary">
@@ -155,7 +156,7 @@
             <div id="insta">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Avant-Tower-Gaming-PC.png" height="50px" width="50px" alt="">
                 <p>
-                    On Insta I post reels which are about funny movement and short cinematic edits. Main goal is to grow and connect with other gamers as well. <br> Hoping for more Followers!
+                    I have a Decent specificated PC bought in 2018! without it I'm nothing check out detailed spec sheet here.
 
                 </p>
                 <a href="http://blazingbane.herokuapp.com/pc">
@@ -166,21 +167,41 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="disc">
         <div class="container">
             <iframe id="discord" height="500px" width="100%" src="https://discordapp.com/widget?id=515165357812613140&theme=dark " allowtransparency="true " frameborder="0 "></iframe>
         </div>
     </section>
-    <section id="about" style=" 
-    background-color: #0d1e29 !important;
-    ">
-        <h3>WHO AM I?</h3>
-        <article>
-            A guy named <a href="kondashivaradhan.github.io">Konda Shivaradhan</a> who has been playing computer games since a kid. wanting to keep playing as long as I can. streaming is my ultimate goal and probably setup a good base for gamers of my
-            time!.
+    <section class="about" id="play" style="background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.644)), url(https://wallpapercave.com/wp/wc1765288.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+        <div>
+            <h3 style="font-weight: 900;">What Games I play?</h3>
+            <article>
+                I play mostly FPS games such as <span id="fps2">Battlefield</span> ,<span id="fps2">Apex Legends</span>, <span id="fps2">Rainbow 6 Siege</span>,etc. <br> Here are my Stats for
+                <a id="fps" href="http://blazingbane.herokuapp.com/apex/blazingbane">
+                    Apex Legends
+                </a>
 
-        </article>
+            </article>
+        </div>
+
     </section>
+    <br>
+    <section class="about" id="about" ;>
+        <div>
+            <h3 style="font-weight: 900;">WHO AM I?</h3>
+            <article>
+                A guy named <a id="fps" href="http://kondashivaradhan.github.io">Konda Shivaradhan</a> who has been playing computer games since a kid. Streaming is my ultimate goal and probably setup a good base for gamers of my time!.
+
+            </article>
+        </div>
+
+    </section>
+    <footer>
+        <i class="fa fa-heart" aria-hidden="true"></i> Blazing Bane
+    </footer>
 </body>
 
 </html>

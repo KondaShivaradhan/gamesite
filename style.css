@@ -31,6 +31,24 @@ body {
     z-index: -999;
 }
 
+footer {
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font: 1em sans-serif;
+}
+
+#fps2 {
+    color: aqua;
+}
+
+#fps {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #edf05b;
+}
+
 #game2 {
     width: 100vw;
     height: calc(100vw/1.77);
@@ -141,7 +159,7 @@ body {
     margin: 10px auto;
     color: black;
     box-sizing: content-box;
-    box-shadow: #5e5f5f 10px 10px 20px;
+    box-shadow: #5e5f5f 0px 0px 20px;
     width: 400px;
     background: white;
     display: flex;
@@ -209,7 +227,20 @@ section {
     overflow: hidden;
 }
 
-#about {}
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.644)), url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/SUC/wppgame-20190806071758489.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+}
+
+.about>div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .button {
     position: relative;
