@@ -287,9 +287,6 @@ button:focus {
     #bb {
         height: 60vh;
     }
-    #spin {
-        font-size: 30px;
-    }
 }
 
 @keyframes spining {
@@ -297,12 +294,11 @@ button:focus {
         transform: rotate((0deg));
     }
     to {
-        transform: rotate(180deg)
+        transform: rotate(360deg)
     }
     ;
 }
 
 #spin {
-    font-size: 40px;
-    animation: spining 1s ease infinite alternate-reverse;
+    animation: spining 1s ease-in-out infinite;
 }
