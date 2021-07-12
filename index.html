@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -135,14 +137,21 @@
             }
         }
     </style>
-    <section id="bb" style="background-color: black;">
-        <div id="notfound">
+    <section id="bb" style="background-color: black;padding:0px">
+        <!-- <div id="notfound">
             <div class="notfound">
                 <div class="notfound-404">
                     <h1>BB</h1>
                 </div>
             </div>
+        </div> -->
+        <div class="container">
+            <div class="col-md-12">
+                <video id="firebb" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" src="bbfire.mp4"></video>
+
+            </div>
         </div>
+
     </section>
 
     <section>
@@ -197,7 +206,10 @@
                 <a id="fps" href="http://blazingbane.herokuapp.com/apex/blazingbane">
                     Apex Legends
                 </a>
-
+                <h2>Squad Up?</h2>
+                <div>
+                    Join the Discord server from above
+                </div>
             </article>
         </div>
 
@@ -214,7 +226,14 @@
 
     </section>
     <footer>
-        <i class="fa fa-heart" aria-hidden="true"></i> Blazing Bane
+        <div style="display: flex;
+        flex-direction: row;
+        width: 134px;
+        text-align: center;
+        flex-wrap: nowrap;margin: 0 auto;">
+            With
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_jhEt7A.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></lottie-player> Blazing Bane
+        </div>
     </footer>
 </body>
 

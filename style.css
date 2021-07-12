@@ -213,9 +213,13 @@ a:hover {
 #bb {
     text-align: center;
     width: 100%;
-    padding: 30px;
     overflow: hidden;
-    height: 60vh;
+    /* height: 60vh; */
+}
+
+#firebb {
+    margin-top: 120px;
+    width: 400px;
 }
 
 section {
@@ -285,7 +289,10 @@ button:focus {
         height: auto;
     }
     #bb {
-        height: 60vh;
+        /* height: 60vh; */
+    }
+    #firebb {
+        width: 200px;
     }
 }
 
