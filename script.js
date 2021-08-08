@@ -51,7 +51,7 @@ function navi() {
 }
 async function live() {
     async function getHeader() {
-        const response = await axios.head({ mode: 'cors' },
+        const response = await axios.head(
             "https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live"
         );
 
