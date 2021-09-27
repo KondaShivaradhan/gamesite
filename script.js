@@ -50,20 +50,19 @@ function navi() {
     }
 }
 async function live() {
-    async function getHeader() {
-        const response = await axios.head(
-            "https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live"
-        );
-
-        console.log(response.headers["content-length"]);
-    }
-    getHeader();
+    // async function getHeader() {
+    //     const response = await axios.head(
+    //         "https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live"
+    //     );
+    //     console.log(response.headers["content-length"]);
+    // }
+    // getHeader();
     // const myHeaders = new Headers();
-    // await fetch({ mode: 'cors' }, { method: 'HEAD' }, "https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live")
-    //     .then(response => console.log(response))
-    //     // .then(data => console.log(data));
-    //     // await fetch({ mode: 'cors' }, { method: 'HEAD' }, 'https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live')
-    //     //     .then(response => console.log(response))
-    //     // response.headers.get("content-length")
-    //     //     .then(data => console.log(data));
+    await fetch({ method: 'HEAD' }, "https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live")
+        .then(response => console.log(response))
+        //     // .then(data => console.log(data));
+        //     // await fetch({ mode: 'cors' }, { method: 'HEAD' }, 'https://www.youtube.com/channel/UCyyTvdpAOrbtJ3A0-3glGTA/live')
+        //     //     .then(response => console.log(response))
+        //     // response.headers.get("content-length")
+        //     //     .then(data => console.log(data));
 }
