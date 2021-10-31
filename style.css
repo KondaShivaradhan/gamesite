@@ -20,6 +20,16 @@ body {
     padding-top: 30px;
 }
 
+#face {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./public/images/face.jpg);
+}
+
 #game {
     width: 100vw;
     height: calc(100vw/1.77);
@@ -232,11 +242,11 @@ section {
 }
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.644)), url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/SUC/wppgame-20190806071758489.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.644)), url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/SUC/wppgame-20190806071758489.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 56vh;
+    height: 60vh;
 }
 
 .photo>div {
